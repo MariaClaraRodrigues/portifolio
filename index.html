@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/fontawesome/css/all.css">
+  <link rel="stylesheet" href="/estilo.css">
+  <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
+  <title>Maria Clara</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="/logo.svg" alt="Logo tipo">
+    </div>
+    <ul>
+      <li>
+        <a href="https://github.com/MariaClaraRodrigues" target="_blank">Github</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/mariaclarasr" target="_blank">Likedin</a>
+      </li>
+      <li>
+        <a href="mailto:mariarodrigues.dev@gmail.com" target="_blank">Email</a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <section class="container">
+      <div class="name">
+        <h1>Maria Clara Rodrigues</h1>
+        <h2>Front-end</h2>
+      </div>
+      <div onclick="displayAbout()" id="arrow">
+        <i id="animation" class="fa-solid fa-sort-down"></i>
+      </div>
+      <div style="display: none;" id="about">
+        <p>
+          Olá, meu nome é Maria Clara da Silva Rodrigues, e estou aprendendo frontend pois é algo que tenho muita aptidão, principalmente por ser algo que tenho me interresado muito no último ano. Comecei a me aprofundar e me interessar em frontend em dezembro de 2021 e atualmente é algo que está fazendo eu me dedicar todos os dias para me tornar uma boa profissional futuramente. Caso queira me conhecer mais é só acessar minhas redes.
+        </p>
+      </div>
+      <div class="form">
+        <div>
+          <p>Deixe seu contatos!</p>
+        </div>
+        <form action="">
+          <input type="text" placeholder="email@email.com">
+          <button>Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function displayAbout() {
+      var arrow = document.getElementById('animation');
+      arrow.classList.toggle('rotate');
+      var display = document.getElementById('about');
+      display.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

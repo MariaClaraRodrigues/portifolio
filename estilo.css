@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #f6b042;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(95deg, #0f2027, #203a43);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 1px 1px 10px 1px wheat;
+  margin-bottom: 60px;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  padding: 10px;
+}
+
+header ul li a {
+  transition: 300ms;
+}
+
+header ul li a:hover {
+  color: #ffd904;
+  text-decoration: underline;
+}
+
+h2 {
+  padding: 10px 0 40px 0;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  text-align: center;
+}
+
+.container .name {
+  word-wrap: break-word;
+  font-size: 45px;
+}
+
+.container .name h2 {
+  font-size: 30px;
+}
+
+#arrow {
+  font-size: 35px;
+  cursor: pointer;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#animation {
+  transition: 300ms;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+.active {
+  display: block !important;
+}
+
+#about p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+div p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form {
+  width: 40%;
+  margin: 0 auto;
+  border: thick double wheat;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.form input {
+  width: 50%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+  width: 15%;
+  padding: 5px 10px;
+  background: linear-gradient(to right, #f3b702 50%, #ffd904 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: black;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+  border-radius: 0px 5px 5px 0px;
+  margin-left: -5px;
+}
+
+.form button:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header ul {
+    font-size: 1rem;
+  }
+  .container .name {
+    font-size: 20px;
+  }
+  .container .name h2 {
+    font-size: 15px;
+  }
+  #about p {
+    max-width: 80%;
+    text-align: center;
+  }
+}
